@@ -226,12 +226,6 @@ const startLogOutTimer = function () {
 //Event handler login
 let currentAccount, timer;
 
-// Fake login
-
-currentAccount = account1;
-updateUI(currentAccount);
-containerApp.style.opacity = 100;
-
 btnLogin.addEventListener('click', function (e) {
   //prevent page from submitting
   e.preventDefault();
@@ -384,53 +378,3 @@ btnSort.addEventListener('click', function (e) {
   displayMovement(currentAccount, !sorted);
   sorted = !sorted;
 });
-
-/////////////////////////////////////////////////
-/////////////////////////////////////////////////
-// LECTURES
-
-// console.log(parseInt('2.5'));
-
-// const num = 3452737.23;
-// const options = {
-//   style: 'currency', // unit, percent , currency
-//   unit: 'celsius', // mile-per-hour , celsius
-//   currency: 'EUR',
-//   // useGrouping: false,
-// };
-
-// console.log('US       :', new Intl.NumberFormat('en-US', options).format(num));
-// console.log('Germany  :', new Intl.NumberFormat('de-DE', options).format(num));
-// console.log('Syria    :', new Intl.NumberFormat('ae-SY', options).format(num));
-// console.log(
-//   navigator.language,
-//   new Intl.NumberFormat(navigator.language, options).format(num)
-// );
-
-// setTimer
-// const ingredients = ['olives', 'spinach'];
-
-// const pizzaTimer = setTimeout(
-//   (ing1, ing2) => console.log(`Here is your pizza with ${ing1} and ${ing2} 🍕`),
-//   3000,
-//   ...ingredients
-// );
-
-// if (ingredients.includes('spinach')) clearTimeout(pizzaTimer);
-
-//setinterval
-//setinterval
-// setInterval(() => {
-//   console.clear();
-//   const options = {
-//     hour: 'numeric',
-//     minute: 'numeric',
-//     second: 'numeric',
-//     hour12: 'true',
-//   };
-//   const now = Intl.DateTimeFormat(navigator.language, options).format(
-//     new Date()
-//   );
-
-//   console.log(now);
-// }, 1000);
